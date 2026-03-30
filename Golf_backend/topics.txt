@@ -1,0 +1,6 @@
+express
+cors
+dotenv
+jsonwebtoken
+bcrypt
+pg (for Supabase/Postgres)
