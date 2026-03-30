@@ -12,6 +12,16 @@ A full-stack web application for a golf charity subscription service. Users can 
 - **Draws System**: Enter charity draws based on subscriptions.
 - **Responsive UI**: Modern Tailwind CSS design.
 
+## 📱 Screenshots
+
+![Home Page](Screen_shots/HomePage.png)
+![Login Page](Screen_shots/LoginPage.png)
+![Register Page](Screen_shots/RegisterPage.png)
+![User Dashboard](Screen_shots/UserDashboard.png)
+![Charity Page](Screen_shots/CharityPage.png)
+![User Scoreboard](Screen_shots/UserScoreboard.png)
+![Admin Dashboard](Screen_shots/AdminDashboard.png)
+
 ## 🏗️ Tech Stack
 
 ### Backend
