@@ -16,7 +16,7 @@ const Register = () => {
     e.preventDefault();
     try {
       await register(form);
-      navigate("/"); // Redirect to home/login
+      navigate("/login"); // Auto to dashboard after register + login
     } catch (err) {
       setError(err.response?.data?.msg || "Registration failed");
     }

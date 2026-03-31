@@ -23,7 +23,6 @@ const CharitiesAdmin = () => {
       const response = await api.get("/charities");
       setCharities(response.data);
     } catch (err) {
-      console.error("Charities load error:", err);
       setCharities([
         {
           id: 1,
@@ -49,11 +48,11 @@ const CharitiesAdmin = () => {
     try {
       if (editingCharity) {
         // PUT to backend (stubbed)
-        console.log("Update:", editingCharity.id, formData);
+
         alert("Updated charity (backend PUT /charities/:id coming soon)");
       } else {
         // POST to backend (stubbed)
-        console.log("Create:", formData);
+
         alert("Added charity (backend POST /charities coming soon)");
       }
       fetchCharities();
@@ -65,7 +64,7 @@ const CharitiesAdmin = () => {
 
   const handleDelete = async (id) => {
     if (confirm("Delete charity?")) {
-      console.log("Delete:", id);
+
       alert("Deleted charity (backend DELETE /charities/:id coming soon)");
       // Filter out for demo
       setCharities(charities.filter((c) => c.id !== id));

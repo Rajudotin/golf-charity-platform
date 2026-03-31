@@ -11,14 +11,13 @@ const DrawsAdmin = () => {
     setLoading(true);
     setError("");
     try {
-      const response = await api.post("/draw/run"); // Fixed endpoint: /api/draw/run
+      const response = await api.post("/draw/run");
       setResults(response.data);
       alert(
         `🎉 Draw complete!\nNumbers: ${response.data.draw.numbers.join(", ")}\nWinners: ${response.data.winners.length}`,
       );
     } catch (err) {
       setError(err.response?.data?.msg || "Draw failed");
-      console.error("Draw error:", err.response?.status, err.response?.data);
     } finally {
       setLoading(false);
     }
