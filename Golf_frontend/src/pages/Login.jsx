@@ -11,17 +11,20 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
+    console.log("LOGIN CLICKED", email, password);
     e.preventDefault();
     setIsLoading(true);
     setError("");
     try {
       const data = await login(email, password);
+      console.log("LOGIN SUCCESS", data);
       if (data.user.role === "admin") {
         navigate("/admin");
       } else {
         navigate("/dashboard");
       }
     } catch (err) {
+      console.log("LOGIN ERROR", err);
       setError(err.response?.data?.message || "Login failed");
     } finally {
       setIsLoading(false);
