@@ -23,8 +23,10 @@ const Register = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto">
-      <h2 className="text-2xl font-bold text-center mb-6">Join Golf Charity</h2>
+    <div className="max-w-sm sm:max-w-md mx-auto p-4 sm:p-0">
+      <h2 className="text-xl sm:text-2xl font-bold text-center mb-6">
+        Join Golf Charity
+      </h2>
       {error && (
         <div className="bg-red-100 text-red-700 p-3 rounded mb-4">{error}</div>
       )}
@@ -35,7 +37,7 @@ const Register = () => {
           value={form.name}
           onChange={(e) => setForm({ ...form, name: e.target.value })}
           required
-          className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500"
+          className="w-full p-3 sm:p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition"
         />
         <input
           type="email"
@@ -43,7 +45,7 @@ const Register = () => {
           value={form.email}
           onChange={(e) => setForm({ ...form, email: e.target.value })}
           required
-          className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500"
+          className="w-full p-3 sm:p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition"
         />
         <input
           type="password"
@@ -52,11 +54,11 @@ const Register = () => {
           onChange={(e) => setForm({ ...form, password: e.target.value })}
           minLength="8"
           required
-          className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500"
+          className="w-full p-3 sm:p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition"
         />
         <button
           type="submit"
-          className="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 font-semibold shadow-lg"
+          className="w-full py-3 sm:py-2 rounded-lg hover:bg-green-700 font-semibold shadow-lg transition-all text-white bg-green-600 hover:shadow-xl hover:-translate-y-0.5"
         >
           Create Account
         </button>

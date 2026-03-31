@@ -14,13 +14,15 @@ A full-stack web application for a golf charity subscription service. Users can 
 
 ## 📱 Screenshots
 
-![Home Page](Screen_shots/HomePage.png)
-![Login Page](Screen_shots/LoginPage.png)
-![Register Page](Screen_shots/RegisterPage.png)
-![User Dashboard](Screen_shots/UserDashboard.png)
-![Charity Page](Screen_shots/CharityPage.png)
-![User Scoreboard](Screen_shots/UserScoreboard.png)
-![Admin Dashboard](Screen_shots/AdminDashboard.png)
+![Home Page](./Screen_shots/HomePage.png)
+![Login Page](./Screen_shots/LoginPage.png)
+![Register Page](./Screen_shots/RegisterPage.png)
+![User Dashboard](./Screen_shots/UserDashboard.png)
+![Charity Page](./Screen_shots/CharityPage.png)
+![User Scoreboard](./Screen_shots/UserScoreboard.png)
+![Admin Dashboard](./Screen_shots/AdminDashboard.png)
+
+**Fully responsive on mobile & desktop ✅**
 
 ## 🏗️ Tech Stack
 
@@ -43,8 +45,8 @@ A full-stack web application for a golf charity subscription service. Users can 
 ### Prerequisites
 
 - Node.js 18+
-- PostgreSQL database
-- Stripe account (test mode)
+- PostgreSQL database (optional for full features)
+- Stripe account (test mode - optional)
 
 ### Backend Setup
 
@@ -59,9 +61,9 @@ npm run dev  # Starts on http://localhost:5000
 
 ```bash
 cd Golf_frontend
-cp .env.example .env  # Set VITE_API_URL=http://localhost:5000/api
-npm install
-npm run dev  # Starts on http://localhost:5173
+# Copy .env if exists (sets API URL for backend)
+npm install  # Dependencies already present
+npm run dev  # http://localhost:5173 - Fully responsive! 📱💻
 ```
 
 ### Database
